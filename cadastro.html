@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Virtual | Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <header>EstanteVirtual</header>
+    <main>
+
+        <img src="./assets/folha.svg" class="folha-direita">
+        <img src="./assets/folha.svg" class="folha-esquerda">
+      
+      <div class="card">
+        <img src="assets/cachorrinho.svg" alt="cachorrinho" class="img-cachorrinho2">
+        <h2>Cadastro</h2>
+        <h3>Seja bem-vindo(a)</h3>
+        <p>Faça o cadastro para monitorar suas leituras</p>
+
+        <form>
+            <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" />
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha</label>
+            <div class="password">
+              <input type="password" id="senha" placeholder="**********"/>
+              <button type="button" class="icon-eye">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="confirmar-senha">Confirme sua senha</label>
+            <div class="password">
+              <input type="password" id="confirmar-senha" placeholder="**********"/>
+              <button type="button" class="icon-eye">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="primary-btn">Cadastre-se</button>
+        </form>
+        <p>Já possui uma conta?</p>
+      <button class="second-btn"><a href="./login.html">Faça login</a></button>
+      </div>
+      
+    </main>
+    <img src="./assets/caminhando.svg" alt="homem caminhando com cachorrinho" class="img-caminhando">
+    <img src="./assets/cachorrinho.svg" alt="cachorrinho" class="img-cachorrinho1">
+  </body>
+</html>
