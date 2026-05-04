@@ -14,8 +14,9 @@ body {
 
 header {
   padding: 20px 32px;
+  font-size: 1.4rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  color: #4c1d95;
 }
 
 main {
@@ -207,6 +208,13 @@ form > p:hover {
 .second-btn > a {
   text-decoration: none;
   color: #4c1d95;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-btn > a {
+  text-decoration: none;
+  color: #fff;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
