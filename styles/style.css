@@ -14,7 +14,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 10%;
+  padding: 20px 10%;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -66,6 +66,7 @@ header {
   outline: none;
   border-color: #4c1d95;
   border-radius: 10px;
+  border-radius: 8px;
 
 }
  
