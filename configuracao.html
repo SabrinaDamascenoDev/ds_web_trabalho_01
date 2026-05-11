@@ -13,34 +13,107 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./styles/configuracao.css" />
   </head>
   <body>
     <input type="radio" class="tab-radio" name="tabs" id="tab-dados" checked />
     <input type="radio" class="tab-radio" name="tabs" id="tab-acesso" />
 
-    <header>
-      <div class="logo-search">
-        <p>EstanteVirtual</p>
-        <div class="search-bar">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Pesquisar livros..." />
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="bi bi-book" style="font-size: 1.5rem; color: #6d28d9"></i>
+        <span>Estante<strong>Virtual</strong></span>
+      </div>
+
+      <a href="cadastrar-livro.html" class="btn-adicionar">
+        <i class="bi bi-plus-lg"></i>
+        Adicionar livro
+      </a>
+
+      <nav class="menu">
+        <a href="inicio.html" class="item-menu ativo">
+          <i class="bi bi-house-door"></i>
+          Início
+        </a>
+
+        <a href="comeca.html" class="item-menu">
+          <i class="bi bi-journal-text"></i>
+          Meus livros
+        </a>
+
+        <a href="clarisse.html" class="item-menu">
+          <i class="bi bi-heart"></i>
+          Favoritos
+        </a>
+
+        <a href="passos.html" class="item-menu">
+          <i class="bi bi-grid"></i>
+          Estantes
+        </a>
+
+        <a href="hugo.html" class="item-menu">
+          <i class="bi bi-star"></i>
+          Avaliações
+        </a>
+
+
+        <a href="configuracao.html" class="item-menu">
+          <i class="bi bi-gear"></i>
+          Configurações
+        </a>
+      </nav>
+
+      <div class="perfil">
+        <div class="avatar-perfil">I</div>
+
+        <div class="perfil-info">
+          <span class="perfil-nome">User</span>
+
+          <a href="perfil.html" class="perfil-link"> Ver perfil </a>
         </div>
+
+        <i class="bi bi-chevron-down" style="color: #aaa"></i>
       </div>
-      <div class="user-section">
-        <i class="fa-solid fa-gear"></i>
-        <a href="./perfil.html">
-            <div class="user-info">
-                <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVzc29hfGVufDB8fDB8fHww" alt="User Icon">
-                <p>Olá, nome do user!</p>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            </a>
+    </aside>
+
+    <div class="layout">
+
+    <header class="topbar">
+
+      <div class="busca">
+        <i class="bi bi-search"></i>
+
+        <input type="text"
+          placeholder="Buscar por livro, autor ou gênero..." />
       </div>
+
+      <div class="topbar-direita">
+
+        <i class="bi bi-bell"
+          style="font-size: 1.3rem; color: #4b5563; cursor: pointer;"></i>
+
+        <a href="perfil.html" class="usuario-top">
+
+          <div class="avatar-top">
+            <i class="bi bi-person-fill"></i>
+          </div>
+
+          <span>User</span>
+
+          <i class="bi bi-chevron-down"
+            style="color: #6b7280; font-size: 0.8rem;"></i>
+
+        </a>
+
+      </div>
+
     </header>
 
     <main>
-      <img src="./assets/cachorrinho.svg" class="cachorrinho">
       <div class="container">
         <nav class="tabs">
           <label class="tab" for="tab-dados">
@@ -129,5 +202,27 @@
         </div>
       </div>
     </main>
+
+      <aside class="lateral-direita">
+
+  <div class="citacao">
+
+    <span class="aspas">"</span>
+
+    <p>
+      Um leitor vive mil vidas antes de morrer.
+      O homem que nunca lê vive apenas uma.
+    </p>
+
+    <span class="autor-citacao">
+      — George R.R. Martin
+    </span>
+
+  </div>
+
+  </div>
+
+</aside>
+    </div>
   </body>
 </html>
