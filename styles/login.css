@@ -136,11 +136,13 @@ form > p:hover {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 0.25s ease;
 }
 
 .primary-btn:hover {
-  background: linear-gradient(135deg, #481488, #3a0e7c);;
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 20px rgba(124,58,237,0.25);
 }
 
 .card > p:last-of-type {
