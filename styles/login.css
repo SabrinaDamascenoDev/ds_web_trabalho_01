@@ -128,7 +128,7 @@ form > p:hover {
 .primary-btn {
   width: 100%;
   padding: 15px;
-  background: #52218e;
+  background: linear-gradient(135deg, #5f3197, #3a0e7c);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -140,7 +140,7 @@ form > p:hover {
 }
 
 .primary-btn:hover {
-  background: #3b0d7a;
+  background: linear-gradient(135deg, #481488, #3a0e7c);;
 }
 
 .card > p:last-of-type {

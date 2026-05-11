@@ -156,7 +156,7 @@ main {
 
 #tab-dados:checked ~ main .tab[for="tab-dados"],
 #tab-acesso:checked ~ main .tab[for="tab-acesso"] {
-  background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  background: linear-gradient(135deg, #5f3197, #3a0e7c);
   color: white;
 }
 
@@ -217,7 +217,7 @@ label {
   height: 52px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  background: linear-gradient(135deg, #5f3197, #3a0e7c);
   color: white;
   font-size: 0.95rem;
   font-weight: 700;
