@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estante Virtual | Configurações</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/configuracao.css" />
+  </head>
+  <body>
+    <input type="radio" class="tab-radio" name="tabs" id="tab-dados" checked />
+    <input type="radio" class="tab-radio" name="tabs" id="tab-acesso" />
+
+    <header>
+      <div class="logo-search">
+        <p>EstanteVirtual</p>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Pesquisar livros..." />
+        </div>
+      </div>
+      <div class="user-section">
+        <i class="fa-solid fa-gear"></i>
+        <a href="./perfil.html">
+            <div class="user-info">
+                <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVzc29hfGVufDB8fDB8fHww" alt="User Icon">
+                <p>Olá, nome do user!</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            </a>
+      </div>
+    </header>
+
+    <main>
+      <img src="./assets/cachorrinho.svg" class="cachorrinho">
+      <div class="container">
+        <nav class="tabs">
+          <label class="tab" for="tab-dados">
+            <i class="fa-regular fa-address-card"></i>
+            Dados cadastrais
+          </label>
+          <label class="tab" for="tab-acesso">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Acesso
+          </label>
+        </nav>
+
+        <div class="tab-panel dados-cadastrais" id="panel-dados">
+          <h5>Dados cadastrais</h5>
+          <p>Edite seus dados cadastrais</p>
+          <form>
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                value="Lorem Ipsum"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email"
+                value="loremipsun@alu.ufc.br"
+              />
+            </div>
+            <div class="field">
+              <label for="numero">Número</label>
+              <input type="tel" id="numero" placeholder="Digite seu número" />
+            </div>
+            <button type="submit" class="primary-btn">Salvar</button>
+          </form>
+        </div>
+
+        <div class="tab-panel dados-cadastrais" id="panel-acesso">
+          <h5>Acesso</h5>
+          <p>Gerencie seu acesso</p>
+          <form>
+            <div class="field">
+              <label for="senha-atual">Senha atual</label>
+              <input
+                type="password"
+                id="senha-atual"
+                placeholder="Digite sua senha atual"
+              />
+            </div>
+            <div class="field">
+              <label for="nova-senha">Nova senha</label>
+              <input
+                type="password"
+                id="nova-senha"
+                placeholder="Digite a nova senha"
+              />
+            </div>
+            <div class="field">
+              <label for="conf-senha">Confirmar nova senha</label>
+              <input
+                type="password"
+                id="conf-senha"
+                placeholder="Confirme a nova senha"
+              />
+            </div>
+            <button type="submit" class="primary-btn">Atualizar senha</button>
+          </form>
+
+          <div class="danger-zone">
+            <p class="danger-zone-title">Sessão</p>
+            <div class="signout-row">
+              <div class="signout-info">
+                <strong>Encerrar sessão</strong>
+                <span>Você será desconectado da sua conta</span>
+              </div>
+              <button class="signout-btn" type="button">
+                <i class="fa-solid fa-right-from-bracket"></i> Sair
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

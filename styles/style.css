@@ -90,6 +90,9 @@ header {
   cursor: pointer;
 }
  
+.user-section i:hover {
+ color: #6b27d1;
+}
 .user-info {
   display: flex;
   flex-direction: row;
