@@ -48,7 +48,7 @@
 
         <p>Organize seus livros e acompanhe suas leituras favoritas</p>
 
-        <form>
+        <form id="form-livro">
           <div class="field">
             <label for="titulo">Título do livro</label>
 
@@ -104,6 +104,16 @@
               <option>Abandonei</option>
             </select>
           </div>
+          <div class="field" id="campo-qtd-lido" style="display: none">
+            <label for="qtd_lido">Quantas páginas já foram lidas?</label>
+
+            <input
+              type="number"
+              id="qtd_lido"
+              min="0"
+              placeholder="Digite a quantidade de páginas lidas"
+            />
+          </div>
 
           <div class="field">
             <label for="capa">Link da capa</label>
@@ -138,4 +148,5 @@
       class="img-cachorrinho1"
     />
   </body>
+  <script src="./script/cadastrar-livro.js"></script>
 </html>
