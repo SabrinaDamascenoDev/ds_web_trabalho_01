@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstanteVirtual | Meus Livros</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="styles/meus-livros.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="bi bi-book" style="font-size:1.5rem;color:#6d28d9;"></i>
+            <span>Estante<strong>Virtual</strong></span>
+        </div>
+
+        <a href="cadastrar-livro.html" class="btn-adicionar">
+            <i class="bi bi-plus-lg"></i>
+            Adicionar livro
+        </a>
+
+        <nav class="menu">
+
+            <a href="inicio.html" class="item-menu">
+                <i class="bi bi-house-door"></i>
+                Início
+            </a>
+
+            <a href="meus-livros.html" class="item-menu ativo">
+                <i class="bi bi-journal-text"></i>
+                Meus Livros
+            </a>
+
+            <a href="configuracao.html" class="item-menu">
+                <i class="bi bi-gear"></i>
+                Configurações
+            </a>
+
+        </nav>
+
+        <div class="perfil">
+
+            <div class="avatar-perfil">I</div>
+
+            <div class="perfil-info">
+
+                <span class="perfil-nome">Isinha</span>
+
+                <a href="perfil.html" class="perfil-link">
+                    Ver perfil
+                </a>
+
+            </div>
+
+            <i class="bi bi-chevron-down"></i>
+
+        </div>
+
+    </aside>
+
+    <div class="layout">
+
+        <header class="topbar">
+
+            <div class="busca">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    id="busca-input"
+                    placeholder="Buscar por livro, autor ou gênero...">
+
+            </div>
+
+            <div class="topbar-direita">
+
+                
+
+                <a href="perfil.html" class="usuario-top">
+
+                    <div class="avatar-top">
+
+                        <i class="bi bi-person-fill"></i>
+
+                    </div>
+
+                    <span>Isinha</span>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+        <main class="conteudo">
+
+            <section class="secao">
+
+                <div class="cabecalho-pagina">
+
+                    <div>
+
+                        <h1>Meus Livros</h1>
+
+                        <p>Todos os livros cadastrados por você.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="filtros">
+
+                    <button class="filtro ativo" data-status="Todos">Todos</button>
+
+                    <button class="filtro" data-status="A ler">A ler</button>
+
+                    <button class="filtro" data-status="Quero ler">Quero ler</button>
+
+                    <button class="filtro" data-status="Lendo">Lendo</button>
+
+                    <button class="filtro" data-status="Lidos">Lidos</button>
+
+                    <button class="filtro" data-status="Relidos">Relidos</button>
+
+                </div>
+
+                <div
+                    class="grid-livros"
+                    id="grid-livros">
+
+                </div>
+                
+                 <aside class="lateral-direita">
+
+                <div class="citacao">
+
+                <span class="aspas">"</span>
+
+                <p>
+                Um leitor vive mil vidas antes de morrer.
+                O homem que nunca lê vive apenas uma.
+                </p>
+
+                <span class="autor-citacao">
+                — George R.R. Martin
+                </span>
+
+    </div>
+</aside>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="./script/meus-livros.js"></script>
+
+</body>
+
+</html>
