@@ -202,3 +202,73 @@ select:focus {
   }
 
 }
+
+
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.acoes a,
+.acoes button {
+  flex: 1;
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.acoes a:active,
+.acoes button:active {
+  transform: scale(0.97);
+}
+
+.primary-btn:hover {
+  background-color: #5b21b6;
+  border-color: #5b21b6;
+}
+
+.second-btn {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.second-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.danger-btn {
+  background-color: #ffffff;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+}
+
+.danger-btn:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .acoes {
+    flex-direction: column;
+  }
+
+  .acoes a,
+  .acoes button {
+    width: 100%;
+  }
+}
